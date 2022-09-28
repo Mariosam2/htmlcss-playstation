@@ -29,6 +29,15 @@ h1.title {
     height: 500px;
 }
 
+.ms_dropdown-icon::after {
+    display: block;
+    content: url(../img/chevron-down-solid.svg) ;
+    width: 10px;
+    margin-top: 0.1rem;
+    margin-left: 0.3rem;
+   
+}
+
 /* #endregion */
 
 /* #region debug */
