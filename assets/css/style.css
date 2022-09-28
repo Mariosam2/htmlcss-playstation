@@ -1,0 +1,24 @@
+:root {
+    --bg-dark: black;
+}
+
+
+.ms_bg-dark {
+    background-color: var(--bg-dark);
+}
+
+.logo {
+    max-width: 8%;
+}
+
+/* #region debug */
+.debug .jumbotron {
+    height: 300px;
+    background-color: green;
+}
+
+.debug [class*="col"] {
+    height: 200px;
+    background-color: red;
+}
+/* #endregion */
