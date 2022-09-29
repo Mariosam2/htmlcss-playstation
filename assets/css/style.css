@@ -16,6 +16,11 @@ body {
     max-width: 8%;
 }
 
+.jumbotron {
+    height: 600px;
+    
+}
+
 h1.title {
     font-size: 2.375rem;
 }
@@ -25,7 +30,7 @@ nav ul li {
 }
 
 
-/* #regione header */
+/* #region header */
 .ms_card-logo {
     max-width: 70%;
 }
@@ -38,10 +43,7 @@ nav ul li {
    
 }
 
-.jumbotron {
-    height: 500px;
-    
-}
+
 
 .jumbotron.bg_returnal {
     background-image: url(../img/jumbo_bg.jpg);
@@ -61,7 +63,79 @@ nav ul li {
 
 
 /* #endregion */
+/* #region main */
+p.caption {
+    color: gray;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
 
+.products {
+    opacity: 0.7;
+}
+
+.products:hover {
+    opacity: 1;
+    border-bottom: 3px solid;
+    cursor: pointer;
+    
+}
+
+.bg_it_takes_two {
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ms_banner-logo {
+    max-width: 60%;
+   
+}
+
+.ms_img-banner {
+   height: 100%;
+   object-fit: cover;
+}
+
+.ms_btn-light {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.ms_btn-white {
+    background-color: white;
+}
+
+.btn.ms_btn-light:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.btn.ms_btn-white:hover {
+    background-color: white;
+    filter: brightness(95%);
+}
+.box {
+    width: 15%;
+    padding: 0.5rem;
+}
+/* #endregion */
+
+/* #region footer */
+.globe {
+    max-width: 15px;
+}
+
+.links {
+    list-style-type: none;
+}
+
+.links li a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 0.5rem 0;
+}
+/* #endregion */
 /* #region debug */
 .debug .jumbotron {
     background-color: green;
