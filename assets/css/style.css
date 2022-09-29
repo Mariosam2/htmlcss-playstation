@@ -1,10 +1,13 @@
 :root {
     --bg-dark: black;
     --bg-red: #bb2d3b;
+    --bg-darkblue: #161d3a;
+    --bg-beige: #bfbdbb;
+    --bg-primary: #0d6efd;
 }
 
 
-body {
+* {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -12,8 +15,16 @@ body {
     background-color: var(--bg-dark);
 }
 
+.ms_bg-beige {
+    background-color: var(--bg-beige);
+}
+
+.ms_bg-darkblue {
+    background-color: var(--bg-darkblue);
+}
+
 .logo {
-    max-width: 8%;
+    max-width: 5%;
 }
 
 .jumbotron {
@@ -25,7 +36,7 @@ h1.title {
     font-size: 2.375rem;
 }
 
-nav ul li {
+nav ul li:not(.dropdown-menu li) {
     padding: 0 0.5rem;
 }
 
@@ -34,13 +45,102 @@ nav ul li {
 .ms_card-logo {
     max-width: 70%;
 }
+
+
+
 .ms_dropdown-icon::after {
     display: block;
     content: url(../img/chevron-down-solid.svg) ;
     width: 10px;
     margin-top: 0.1rem;
     margin-left: 0.3rem;
+    margin-bottom: 0.1rem;
+    
    
+}
+
+
+.ms_dropdown-icon:hover::after{
+    content: url(../img/chevron-down-solid-hover.svg) ;
+}
+
+.ms_dropdown-icon:focus::after {
+    rotate: 180deg;
+    margin-top: 0;
+    
+}
+
+
+.menu_icon {
+    display: block;
+    max-width: 50%;
+    margin: auto;
+}
+
+.dropdown-menu.show {
+    display: flex;
+    justify-content: center !important;
+    flex-wrap: wrap;
+    margin-top: -5px;
+}
+
+.ms_width-33 {
+    width: calc(100%/3);
+}
+
+
+.box.ms_width-33 {
+    min-width: 350px;
+    width: calc(100%/3);
+}
+
+.box.ms_width-50 {
+    min-width: 350px;
+    width: 50%;
+}
+
+.blue_dot {
+    list-style-type: none;
+}
+
+.ms_console li a {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.blue_dot li a:hover, .ms_console li a:hover{
+    background-color: white;
+}
+
+.ms_console li:hover {
+    box-shadow: 0 0 4px black;
+}
+
+.blue_dot li a:hover {
+    color: var(--bg-primary);
+}
+
+.blue_dot li a::before {
+    content: "\2022";
+    color: blue;
+    margin-right: 0.8rem;
+    font-size: 1.2rem;
+   
+    
+}
+
+
+.ms_searchbar {
+    border: 1px solid black;
+}
+
+.dropdown-item.ms_searchbar:hover, .dropdown-item.ms_searchbar:focus {
+    background-color: white;
+}
+
+.canvas_width {
+    width: 400px !important;
 }
 
 

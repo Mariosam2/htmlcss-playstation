@@ -18,135 +18,252 @@
 
 <body>
     <header id="site_header">
-        <div class="d-flex justify-content-end ms_bg-dark">
-            <img class="logo p-2" src="./assets/img/sony_logo.svg" alt="">
-        </div>
-        <nav class="navbar navbar-expand-xl bg-white p-0 fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./assets//img/play_logo.svg" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end pe-3">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link ms_dropdown-icon d-flex fw-bold active" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <ul class="dropdown-menu border-0 rounded-0 mt-2 p-0">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a>
-                                    <li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link ms_dropdown-icon d-flex fw-bold active" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <ul class="dropdown-menu border-0 rounded-0 mt-2 p-0">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a>
-                                    <li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link ms_dropdown-icon d-flex fw-bold active" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <ul class="dropdown-menu border-0 rounded-0 mt-2 p-0">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a>
-                                    <li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link ms_dropdown-icon d-flex fw-bold active" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <ul class="dropdown-menu border-0 rounded-0 mt-2 p-0">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a>
+        <div class="wrapper fixed-top">
+            <div class="d-flex justify-content-end ms_bg-dark">
+                <img class="logo p-1" src="./assets/img/sony_logo.svg" alt="">
+            </div>
+            <nav class="navbar navbar-expand-xl bg-white p-0">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="./assets//img/play_logo.svg" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end canvas_width" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./assets//img/play_logo.svg" alt=""></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end pe-3">
+                                <li class="nav-item dropdown position-static">
+                                    <a class="nav-link ms_dropdown-icon d-flex fw-bold " href="#" role="button"
+                                        data-bs-toggle="dropdown"  aria-expanded="false">
+                                        Giochi
+                                    </a>
+                                    <ul class="dropdown-menu border-0 rounded-0 w-100">
+                                        <div class="box d-flex flex-wrap ms_width-33 p-0 ms_console">
+                                            <li class="ms_width-33"><img src="./assets/img/play-menu-ico.png" alt="" class="img-fluid menu_icon"><a class="dropdown-item text-center" href="#">PlayStation 5</a></li>
+                                            <li class="ms_width-33"><img src="./assets/img/play-menu-ico.png" alt="" class="img-fluid menu_icon"><a class="dropdown-item text-center" href="#">PlayStation 4</a></li>
+                                            <li class="ms_width-33"><img src="./assets/img/play-menu-ico.png" alt="" class="img-fluid menu_icon"><a class="dropdown-item text-center" href="#">PlayStation 3</a></li>
+                                        </div>
+                                        <li class="w-100">
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <div class="box d-flex flex-wrap ms_width-33 p-0">
+                                            <ul class="d-flex w-100 justify-content-between blue_dot p-0" >
+                                                <li class="ms_width-33 d-flex align-items-center text-center"><a class="dropdown-item p-0" href="#">Link giochi</a></li>
+                                                <li class="ms_width-33 d-flex align-items-center text-center"><a class="dropdown-item p-0" href="#">Link giochi</a></li>
+                                                <li class="ms_width-33 d-flex align-items-center text-center"><a class="dropdown-item p-0" href="#">Link giochi</a></li>
+        
+                                            </ul>
+                                            
+        
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown position-static">
+                                    <a class="nav-link ms_dropdown-icon d-flex fw-bold" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Hardware
+                                    </a>
+                                    <ul class="dropdown-menu border-0 rounded-0 w-100">
+                                        <div class="box d-flex flex-wrap ms_width-33 p-0 ms_console">
+                                            <li class="ms_width-33"><img src="./assets/img/play-menu-ico.png" alt="" class="img-fluid menu_icon"><a class="dropdown-item text-center" href="#">PlayStation 5</a></li>
+                                            <li class="ms_width-33"><img src="./assets/img/play-menu-ico.png" alt="" class="img-fluid menu_icon"><a class="dropdown-item text-center" href="#">PlayStation 4</a></li>
+                                            <li class="ms_width-33"><img src="./assets/img/play-menu-ico.png" alt="" class="img-fluid menu_icon"><a class="dropdown-item text-center" href="#">PlayStation 3</a></li>
+                                        </div>
+                                        <li class="w-100">
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <div class="box d-flex flex-wrap ms_width-33 p-0">
+                                            <ul class="d-flex w-100 justify-content-between blue_dot p-0" >
+                                                <li class="ms_width-33 d-flex align-items-center text-center"><a class="dropdown-item p-0" href="#">Link giochi</a></li>
+                                                <li class="ms_width-33 d-flex align-items-center text-center"><a class="dropdown-item p-0" href="#">Link giochi</a></li>
+                                                <li class="ms_width-33 d-flex align-items-center text-center"><a class="dropdown-item p-0" href="#">Link giochi</a></li>
+        
+                                            </ul>
+                                            
+        
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown position-static">
+                                    <a class="nav-link ms_dropdown-icon d-flex fw-bold " href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Servizi
+                                    </a>
+                                    <ul class="dropdown-menu border-0 rounded-0 w-100">
+                                        <div class="box d-flex flex-wrap ms_width-33 p-0 ms_console">
+                                            <li class="ms_width-33"><img src="./assets/img/play-menu-ico.png" alt="" class="img-fluid menu_icon"><a class="dropdown-item text-center" href="#">PlayStation 5</a></li>
+                                            <li class="ms_width-33"><img src="./assets/img/play-menu-ico.png" alt="" class="img-fluid menu_icon"><a class="dropdown-item text-center" href="#">PlayStation 4</a></li>
+                                            <li class="ms_width-33"><img src="./assets/img/play-menu-ico.png" alt="" class="img-fluid menu_icon"><a class="dropdown-item text-center" href="#">PlayStation 3</a></li>
+                                        </div>
+                                        <li class="w-100">
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <div class="box d-flex flex-wrap ms_width-33 p-0">
+                                            <ul class="d-flex w-100 justify-content-between blue_dot p-0" >
+                                                <li class="ms_width-33 d-flex align-items-center text-center"><a class="dropdown-item p-0" href="#">Link giochi</a></li>
+                                                <li class="ms_width-33 d-flex align-items-center text-center"><a class="dropdown-item p-0" href="#">Link giochi</a></li>
+                                                <li class="ms_width-33 d-flex align-items-center text-center"><a class="dropdown-item p-0" href="#">Link giochi</a></li>
+        
+                                            </ul>
+                                            
+        
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown position-static">
+                                    <a class="nav-link ms_dropdown-icon d-flex fw-bold" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Novità
+                                    </a>
+                                    <ul class="dropdown-menu border-0 rounded-0 w-100">
+                                        <div class="box d-flex flex-wrap ms_width-33 p-0 ms_console">
+                                            <li class="ms_width-33"><img src="./assets/img/play-menu-ico.png" alt="" class="img-fluid menu_icon"><a class="dropdown-item text-center" href="#">PlayStation 5</a></li>
+                                            <li class="ms_width-33"><img src="./assets/img/play-menu-ico.png" alt="" class="img-fluid menu_icon"><a class="dropdown-item text-center" href="#">PlayStation 4</a></li>
+                                            <li class="ms_width-33"><img src="./assets/img/play-menu-ico.png" alt="" class="img-fluid menu_icon"><a class="dropdown-item text-center" href="#">PlayStation 3</a></li>
+                                        </div>
+                                        <li class="w-100">
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <div class="box d-flex flex-wrap ms_width-33 p-0">
+                                            <ul class="d-flex w-100 justify-content-between blue_dot p-0" >
+                                                <li class="ms_width-33 d-flex align-items-center text-center"><a class="dropdown-item p-0" href="#">Link giochi</a></li>
+                                                <li class="ms_width-33 d-flex align-items-center text-center"><a class="dropdown-item p-0" href="#">Link giochi</a></li>
+                                                <li class="ms_width-33 d-flex align-items-center text-center"><a class="dropdown-item p-0" href="#">Link giochi</a></li>
+        
+                                            </ul>
+                                            
+        
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown position-static">
+                                    <a class="nav-link ms_dropdown-icon d-flex fw-bold" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Fai acquisti
+                                    </a>
+                                    <ul class="dropdown-menu border-0 rounded-0 w-100">
+                                        <div class="box d-flex flex-wrap ms_width-33 p-0 ms_console">
+                                            <li class="ms_width-33"><img src="./assets/img/play-menu-ico.png" alt="" class="img-fluid menu_icon"><a class="dropdown-item text-center" href="#">PlayStation 5</a></li>
+                                            <li class="ms_width-33"><img src="./assets/img/play-menu-ico.png" alt="" class="img-fluid menu_icon"><a class="dropdown-item text-center" href="#">PlayStation 4</a></li>
+                                            <li class="ms_width-33"><img src="./assets/img/play-menu-ico.png" alt="" class="img-fluid menu_icon"><a class="dropdown-item text-center" href="#">PlayStation 3</a></li>
+                                        </div>
+                                        <li class="w-100">
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <div class="box d-flex flex-wrap ms_width-33 p-0">
+                                            <ul class="d-flex w-100 justify-content-between blue_dot p-0" >
+                                                <li class="ms_width-33 d-flex align-items-center text-center"><a class="dropdown-item p-0" href="#">Link giochi</a></li>
+                                                <li class="ms_width-33 d-flex align-items-center text-center"><a class="dropdown-item p-0" href="#">Link giochi</a></li>
+                                                <li class="ms_width-33 d-flex align-items-center text-center"><a class="dropdown-item p-0" href="#">Link giochi</a></li>
+        
+                                            </ul>
+                                            
+        
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown position-static">
+                                    <a class="nav-link ms_dropdown-icon d-flex fw-bold" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Supporto
+                                    </a>
+                                    <ul class="dropdown-menu border-0 rounded-0 w-100">
+                                        <div class="box d-flex flex-wrap ms_width-33 p-0 ms_console">
+                                            <li class="ms_width-33"><img src="./assets/img/play-menu-ico.png" alt="" class="img-fluid menu_icon"><a class="dropdown-item text-center" href="#">PlayStation 5</a></li>
+                                            <li class="ms_width-33"><img src="./assets/img/play-menu-ico.png" alt="" class="img-fluid menu_icon"><a class="dropdown-item text-center" href="#">PlayStation 4</a></li>
+                                            <li class="ms_width-33"><img src="./assets/img/play-menu-ico.png" alt="" class="img-fluid menu_icon"><a class="dropdown-item text-center" href="#">PlayStation 3</a></li>
+                                        </div>
+                                        <li class="w-100">
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <div class="box d-flex flex-wrap ms_width-33 p-0">
+                                            <ul class="d-flex w-100 justify-content-between blue_dot p-0" >
+                                                <li class="ms_width-33 d-flex align-items-center text-center"><a class="dropdown-item p-0" href="#">Link giochi</a></li>
+                                                <li class="ms_width-33 d-flex align-items-center text-center"><a class="dropdown-item p-0" href="#">Link giochi</a></li>
+                                                <li class="ms_width-33 d-flex align-items-center text-center"><a class="dropdown-item p-0" href="#">Link giochi</a></li>
+        
+                                            </ul>
+                                            
+        
+                                        </div>
+                                    </ul>
+                                </li>
+                                
+                            </ul>
+                            <ul class="navbar-nav justify-content-end ms-auto">
+                                <li class="nav-item dropdown position-static">
+                                    <a class="nav-link ms_dropdown-icon d-flex fw-bold" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        My PlayStation
+                                    </a>
+                                    <ul class="dropdown-menu border-0 rounded-0 w-100">
+                                        <div class="box d-flex flex-wrap ms_width-33 p-0 ms_console">
+                                            <li class="ms_width-33"><img src="./assets/img/play-menu-ico.png" alt="" class="img-fluid menu_icon"><a class="dropdown-item text-center" href="#">PlayStation 5</a></li>
+                                            <li class="ms_width-33"><img src="./assets/img/play-menu-ico.png" alt="" class="img-fluid menu_icon"><a class="dropdown-item text-center" href="#">PlayStation 4</a></li>
+                                            <li class="ms_width-33"><img src="./assets/img/play-menu-ico.png" alt="" class="img-fluid menu_icon"><a class="dropdown-item text-center" href="#">PlayStation 3</a></li>
+                                        </div>
+                                        <li class="w-100">
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <div class="box d-flex flex-wrap ms_width-33 p-0">
+                                            <ul class="d-flex w-100 justify-content-between blue_dot p-0" >
+                                                <li class="ms_width-33 d-flex align-items-center text-center"><a class="dropdown-item p-0" href="#">Link giochi</a></li>
+                                                <li class="ms_width-33 d-flex align-items-center text-center"><a class="dropdown-item p-0" href="#">Link giochi</a></li>
+                                                <li class="ms_width-33 d-flex align-items-center text-center"><a class="dropdown-item p-0" href="#">Link giochi</a></li>
+        
+                                            </ul>
+                                            
+        
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active btn btn-dark rounded-5 text-white px-3 d-inline-block my-2 my-xl-0" aria-current="page" href="#">Accedi</a>
+                                  </li>
+                            </ul>
+                            <ul class="navbar-nav">
+                                <form class="d-flex align-items-center ps-2 ps-xl-0" role="search">
+                                    <li class="nav-item dropdown position-static">
+                                        <a class="nav-link d-flex fw-bold active" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-search fa-fw "></i>
+                                        </a>
+                                        <ul class="dropdown-menu border-0 rounded-0 w-100">
+                                            <div class="box d-flex ms_width-50 p-0">
+                                                <input class="dropdown-item form-control me-2 ms_searchbar" type="search" placeholder="Search"
+                                                aria-label="Search">
+                                                <div class="btn btn-primary" type="submit"><i class="fas fa-search fa-fw "></i></div>
+                                            </div>
+    
+                                            
+        
+                                                
+                                        </ul>
+        
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link ms_dropdown-icon d-flex fw-bold active" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <ul class="dropdown-menu border-0 rounded-0 mt-2 p-0">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a>
-                                    <li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link ms_dropdown-icon d-flex fw-bold active" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <ul class="dropdown-menu border-0 rounded-0 mt-2 p-0">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a>
-                                    <li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            
-                        </ul>
-                        <ul class="navbar-nav justify-content-end pe-3 ms-auto">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link ms_dropdown-icon d-flex fw-bold active" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <ul class="dropdown-menu border-0 rounded-0 mt-2 p-0">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a>
-                                    <li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active btn btn-dark rounded-5 text-white px-3" aria-current="page" href="#">Accedi</a>
-                              </li>
-                        </ul>
-                        <form class="d-flex align-items-center" role="search">
-                            <input class="form-control me-2 d-none" type="search" placeholder="Search"
-                                aria-label="Search">
-                            <i class="fas fa-search fa-fw " type="submit"></i>
-                        </form>
+                                </form>
+    
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
         <section class="jumbotron bg_returnal d-flex align-items-end py-5 text-white">
             <div class="container">
-                <div class="row">
+                <div class="row row-cols-md-2 row-cols-xxl-3">
                     <div class="col">
-                        <div class="card bg-transparent border-0" style="width: 20rem;">
+                        <div class="card bg-transparent border-0">
                             <img src="./assets/img/returnal-hero-banner-logo.png" class="card-img-top ms_card-logo"
                                 alt="...">
                             <div class="card-body p-0">
                                 <h1 class="card-title title py-3">Rompi il cerchio</h1>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <p class="card-text">Rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni rinascita in questo esplosivo thriller fantascientifico, disponibile in esclusiva su PS5</p>
                                 <a href="#" class="btn btn-danger btn_red rounded-5">Acquista ora</a>
                             </div>
                         </div>
@@ -228,28 +345,28 @@
                     </div>
                     <div class="col products border-primary  text-center">
                         <img src="./assets/img/joypad-thumb.png" alt="" class="img-fluid">
-                        <span class="fw-bold d-inline-block py-3">Console PS5</span>
+                        <span class="fw-bold d-inline-block py-3">Controller wireless DualSense&trade;</span>
                     </div>
                     <div class="col products border-primary text-center">
                         <img src="./assets/img/headset-thumb.png" alt="" class="img-fluid">
-                        <span class="fw-bold d-inline-block py-3">Console PS5</span>
+                        <span class="fw-bold d-inline-block py-3">Cuffie wireless con microfono&trade;</span>
                     </div>
                     <div class="col products border-primary text-center">
                         <img src="./assets/img/remote-thumb.png" alt="" class="img-fluid">
-                        <span class="fw-bold d-inline-block py-3">Console PS5</span>
+                        <span class="fw-bold d-inline-block py-3">Telecomando Media</span>
                     </div>
                     <div class="col products border-primary text-center">
                         <img src="./assets/img/camera-thumb.jpg" alt="" class="img-fluid">
-                        <span class="fw-bold d-inline-block py-3">Console PS5</span>
+                        <span class="fw-bold d-inline-block py-3">Telecamera HD</span>
                     </div>
                 </div>
             </div>
         </section>
         <section class="jumbotron bg_it_takes_two d-flex align-items-end py-5">
             <div class="container">
-                <div class="row">
+                <div class="row row-cols-md-2 row-cols-xxl-3">
                     <div class="col">
-                        <div class="card bg-transparent border-0 text-white" style="width: 22rem;">
+                        <div class="card bg-transparent border-0 text-white">
                             <img src="./assets/img/it-takes-two-logo.png" class="card-img-top ms_card-logo"
                                 alt="...">
                             <div class="card-body p-0">
@@ -392,7 +509,7 @@
                 </div>
             </div>
         </section>
-        <section class="banner bg-secondary">
+        <section class="banner ms_bg-beige">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-7 py-3 align-self-center">
@@ -425,7 +542,7 @@
                 </div>
             </div>
         </section>
-        <section class="banner bg-success">
+        <section class="banner ms_bg-darkblue text-white">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-7 py-3 align-self-center">
