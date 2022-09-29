@@ -216,6 +216,7 @@ p.caption {
 }
 
 .btn.ms_btn-white:hover {
+    color: black;
     background-color: white;
     filter: brightness(95%);
 }
