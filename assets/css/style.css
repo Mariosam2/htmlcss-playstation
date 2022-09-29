@@ -77,6 +77,10 @@ nav ul li:not(.dropdown-menu li) {
     margin: auto;
 }
 
+.navbar-toggler.nav_icon:focus {
+    box-shadow: none;
+}
+
 .dropdown-menu.show {
     display: flex;
     justify-content: center !important;
@@ -172,11 +176,12 @@ p.caption {
 
 .products {
     opacity: 0.7;
+    border-bottom: 3px solid transparent;
 }
 
 .products:hover {
     opacity: 1;
-    border-bottom: 3px solid;
+    border-bottom: 3px solid var(--bg-primary);
     cursor: pointer;
     
 }
