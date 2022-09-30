@@ -181,15 +181,17 @@ nav ul li:not(.dropdown-menu li) {
 }
 
 #carousel_ps .carousel-indicators .card {
+    position: relative;
+    bottom: 0;
     width: auto;
     height: auto;
     margin: 0;
     box-sizing: border-box;
-    transition: bottom 1s ease;
+    transition: bottom ease 0.5s;
 }
 
 #carousel_ps .carousel-indicators .card:hover {
-    bottom: 10px;
+    bottom: 15px;
 }
 
 #carousel_ps .carousel-indicators .card.active img {
