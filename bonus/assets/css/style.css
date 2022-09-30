@@ -161,7 +161,7 @@ nav ul li:not(.dropdown-menu li) {
 }
 
 
-.carousel-item.ms_transition {
+#carousel_ps .carousel-item.ms_transition {
     transition: transform .2s ease-in-out;
 }
 
@@ -176,12 +176,27 @@ nav ul li:not(.dropdown-menu li) {
     bottom: 3rem;
 }
 
-.carousel-indicators .card {
+#carousel_ps .carousel-indicators {
+    margin: 0;
+}
+
+#carousel_ps .carousel-indicators .card {
     width: auto;
     height: auto;
     margin: 0;
     box-sizing: border-box;
+    transition: bottom 1s ease;
 }
+
+#carousel_ps .carousel-indicators .card:hover {
+    bottom: 10px;
+}
+
+#carousel_ps .carousel-indicators .card.active img {
+    border: 2px solid var(--bg-primary);
+    padding: 0.2rem;
+    
+} 
 
 
 
