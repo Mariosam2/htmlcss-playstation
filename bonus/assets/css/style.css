@@ -165,8 +165,17 @@ nav ul li:not(.dropdown-menu li) {
     transition: transform .2s ease-in-out;
 }
 
+.layover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5) ;
+}
 
-#carousel_ps .carousel-item > img {
+
+#carousel_ps .carousel-item  > img {
     height: 600px;
     object-fit: cover;
 }
