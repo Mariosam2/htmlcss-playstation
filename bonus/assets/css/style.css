@@ -64,7 +64,7 @@ nav ul li:not(.dropdown-menu li) {
     content: url(../img/chevron-down-solid-hover.svg) ;
 }
 
-.ms_dropdown-icon:focus::after {
+.ms_dropdown-icon.show::after {
     rotate: 180deg;
     margin-top: 0;
     
@@ -149,13 +149,32 @@ nav ul li:not(.dropdown-menu li) {
 
 
 
-.jumbotron.bg_returnal {
+/*.jumbotron.bg_returnal {
     background-image: url(../img/jumbo_bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}*/
+
+#carousel_ps {
+    margin-top: 83.33px;
 }
 
+
+.carousel-item.ms_transition {
+    transition: transform .2s ease-in-out;
+}
+
+
+#carousel_ps .carousel-item > img {
+    height: 600px;
+    object-fit: cover;
+}
+
+#carousel_ps .carousel-caption {
+    text-align: left;
+    bottom: 3rem;
+}
 
 .carousel-indicators .card {
     width: auto;
@@ -164,17 +183,6 @@ nav ul li:not(.dropdown-menu li) {
     box-sizing: border-box;
 }
 
-.carousel-indicators.preview {
-    margin: 0;
-}
-
-.carousel-indicators.preview.btn:focus {
-    border: 10px solid var(--bg-primary);
-}
-
-.carousel-item.ms_transition {
-    transition: transform .2s ease-in-out;
-}
 
 
 

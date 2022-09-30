@@ -64,7 +64,7 @@ nav ul li:not(.dropdown-menu li) {
     content: url(../img/chevron-down-solid-hover.svg) ;
 }
 
-.ms_dropdown-icon:focus::after {
+.ms_dropdown-icon.show::after {
     rotate: 180deg;
     margin-top: 0;
     
