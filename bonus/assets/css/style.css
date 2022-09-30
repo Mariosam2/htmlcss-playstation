@@ -202,10 +202,26 @@ nav ul li:not(.dropdown-menu li) {
 
 
 
-
-.btn_red {
-    background-color: var(--bg-red);
+.ms_btn.btn-danger, .ms_btn.btn-primary, .ms_btn:first-child, .ms_btn.ms_bg-light , .ms_btn.ms_bg-white {
+    border: 3px double transparent;
+    
 }
+
+.ms_btn.btn-danger:hover {
+    border-color: white;
+}
+
+
+.ms_btn:hover {
+    transition: border ease 0.2s;
+}
+.ms_btn:first-child:hover, .btn.ms_bg-white:hover, .btn.ms_bg-light:hover {
+    border-color: var(--bg-dark);
+}
+
+
+
+
 
 
 
@@ -250,19 +266,19 @@ p.caption {
    object-fit: cover;
 }
 
-.ms_btn-light {
+.ms_bg-light {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.ms_btn-white {
+.ms_bg-white {
     background-color: white;
 }
 
-.btn.ms_btn-light:hover{
+.btn.ms_bg-light:hover{
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-.btn.ms_btn-white:hover {
+.btn.ms_bg-white:hover {
     color: black;
     background-color: white;
     filter: brightness(95%);
